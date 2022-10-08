@@ -509,6 +509,7 @@ export class MatSelectSearchComponent implements OnInit, OnDestroy, ControlValue
 
   onBlur() {
     this.unselectActiveDescendant();
+    this.activeDescendant = undefined;
     this.onTouched();
   }
 
